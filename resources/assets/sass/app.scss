@@ -387,3 +387,20 @@ table label {
 .input-error {
   border: 1px inset red;
 }
+
+.btn-app > .ra {
+  font-size: 20px;
+  display: block;
+}
+
+.btn-quick {
+  font-size: 30px;
+  height: 110px;
+  padding: 25px 15px;
+  width: 100%;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+  }
+}

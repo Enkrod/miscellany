@@ -13,6 +13,11 @@
             <li class="{{ $sidebar->active('campaigns') }}">
                 <a href="{{ route('campaign') }}"><i class="fa fa-globe"></i> <span>{{ trans('sidebar.campaign') }}</span></a>
             </li>
+            <li>
+                <a href="{{ route('entities.quick') }}" data-toggle="ajax-modal" data-target="#entity-modal" data-url="{{ route('entities.quick') }}">
+                    <i class="fa fa-plus"></i> {{ trans('sidebar.quick') }}
+                </a>
+            </li>
             @endif
             @if ($campaign->enabled('menu_links'))
             <li class="treeview {{ $sidebar->open('menu_links') }}">

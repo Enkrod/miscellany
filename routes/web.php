@@ -228,6 +228,9 @@ Route::group([
         // Export
         Route::get('/entities/export/{entity}', 'EntityController@export')->name('entities.export');
 
+        // Quick creator
+        Route::get('/quick-entity', 'EntityQuickController@create')->name('entities.quick');
+
         // Attribute template
         Route::get('/entities/{entity}/attribute/template', 'AttributeController@template')->name('entities.attributes.template');
         Route::post('/entities/{entity}/attribute/template', 'AttributeController@applyTemplate')->name('entities.attributes.template');
